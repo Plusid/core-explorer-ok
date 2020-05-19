@@ -56,7 +56,7 @@ describe("Services > Wallet", () => {
   });
 
   it("should return all wallets that have a balance greater than 100,000", async () => {
-    const minBalance = 100000 * 1e8;
+    const minBalance = 100000 * 1e5;
     const { data } = await WalletService.search({ balance: { from: minBalance } });
     expect(data).toHaveLength(25);
     data.forEach(wallet => {
