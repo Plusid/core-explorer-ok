@@ -87,10 +87,10 @@ describe("Mixins > Currency", () => {
     store.dispatch("network/setToken", "ARK");
 
     it("should properly format the given data", () => {
-      expect(wrapper.vm.readableCurrency(100000000, null, "ARK")).toEqual("1000 Ѧ");
-      expect(wrapper.vm.readableCurrency(1000000000, null, "BTC")).toEqual("10000 Ƀ");
-      expect(wrapper.vm.readableCurrency(10000000000, null, "ETH")).toEqual("100000 Ξ");
-      expect(wrapper.vm.readableCurrency(100000000000, null, "LTC")).toEqual(`${Number(1000000).toLocaleString()} Ł`);
+      expect(wrapper.vm.readableCurrency(100000000, null, "ARK")).toEqual("1 Ѧ");
+      expect(wrapper.vm.readableCurrency(1000000000, null, "BTC")).toEqual("10 Ƀ");
+      expect(wrapper.vm.readableCurrency(10000000000, null, "ETH")).toEqual("100 Ξ");
+      expect(wrapper.vm.readableCurrency(100000000000, null, "LTC")).toEqual(`${Number(1000).toLocaleString()} Ł`);
     });
 
     it("should format currency with 2 decimals", () => {
