@@ -22,7 +22,7 @@ describe("Mixins > Currency", () => {
   });
 
   const displayCrypto = value => {
-    return value.toLocaleString(undefined, { maximumFractionDigits: 8 });
+    return value.toLocaleString(undefined, { maximumFractionDigits: 5 });
   };
 
   const displayFiat = value => {
@@ -30,11 +30,11 @@ describe("Mixins > Currency", () => {
   };
 
   describe("rawCurrency", () => {
-    it("should display selected cryptocurrency with 8 digits or less", () => {
+    it("should display selected cryptocurrency with 5 digits or less", () => {
       store.dispatch("network/setToken", "ARK");
-      expect(wrapper.vm.rawCurrency(10.1234567891234, "ARK")).toEqual(displayCrypto(10.12345678));
-      expect(wrapper.vm.rawCurrency(10.1234567891234, "ETH")).toEqual(displayCrypto(10.12345678));
-      expect(wrapper.vm.rawCurrency(10.1234567891234, "BTC")).toEqual(displayCrypto(10.12345678));
+      expect(wrapper.vm.rawCurrency(10.1234567891234, "ARK")).toEqual(displayCrypto(10.12346));
+      expect(wrapper.vm.rawCurrency(10.1234567891234, "ETH")).toEqual(displayCrypto(10.12346));
+      expect(wrapper.vm.rawCurrency(10.1234567891234, "BTC")).toEqual(displayCrypto(10.12346));
       expect(wrapper.vm.rawCurrency(10.12345, "ARK")).toEqual(displayCrypto(10.12345));
     });
 
