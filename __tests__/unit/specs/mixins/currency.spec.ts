@@ -54,16 +54,16 @@ describe("Mixins > Currency", () => {
       expect(wrapper.vm.readableCrypto(10.12345438912345 * Math.pow(10, 5), false)).toEqual(displayCrypto(10.12345));
       expect(wrapper.vm.readableCrypto(10.1234 * Math.pow(10, 5), false)).toEqual(displayCrypto(10.1234));
       expect(wrapper.vm.readableCrypto(10 * Math.pow(10, 5), false, 4)).toEqual(displayCrypto(10));
-      expect(wrapper.vm.readableCrypto(10.123456 * Math.pow(10, 5), false, 2)).toEqual(displayCrypto(10.123));
-      expect(wrapper.vm.readableCrypto(10.123456789123456789 * Math.pow(10, 5), false, 10)).toEqual(
+      expect(wrapper.vm.readableCrypto(10.123456 * Math.pow(10, 5), false, 2)).toEqual(displayCrypto(10.12));
+      expect(wrapper.vm.readableCrypto(10.123456789123456789 * Math.pow(10, 5), false, 13)).toEqual(
         Number(10.123456789123456789).toLocaleString(undefined, { maximumFractionDigits: 5 }),
       );
     });
 
     it("should return crypto value in readable format, including symbol", () => {
       store.dispatch("network/setSymbol", "Ѧ");
-      expect(wrapper.vm.readableCrypto(10 * Math.pow(10, 5))).toEqual(displayCrypto(10000) + " Ѧ");
-      expect(wrapper.vm.readableCrypto(10 * Math.pow(10, 5), true)).toEqual(displayCrypto(10000) + " Ѧ");
+      expect(wrapper.vm.readableCrypto(10 * Math.pow(10, 5))).toEqual(displayCrypto(10) + " Ѧ");
+      expect(wrapper.vm.readableCrypto(10 * Math.pow(10, 5), true)).toEqual(displayCrypto(10) + " Ѧ");
       expect(wrapper.vm.readableCrypto(10.12345678912345 * Math.pow(10, 5), true)).toEqual(
         displayCrypto(10.12346) + " Ѧ",
       );
