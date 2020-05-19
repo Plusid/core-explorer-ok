@@ -50,13 +50,13 @@ describe("Mixins > Currency", () => {
 
   describe("readableCrypto", () => {
     it("should return crypto value in readable format", () => {
-      expect(wrapper.vm.readableCrypto(10 * Math.pow(10, 8), false)).toEqual(displayCrypto(10));
-      expect(wrapper.vm.readableCrypto(10.12345678912345 * Math.pow(10, 8), false)).toEqual(displayCrypto(10.12345679));
-      expect(wrapper.vm.readableCrypto(10.1234 * Math.pow(10, 8), false)).toEqual(displayCrypto(10.1234));
-      expect(wrapper.vm.readableCrypto(10 * Math.pow(10, 8), false, 4)).toEqual(displayCrypto(10));
-      expect(wrapper.vm.readableCrypto(10.123456 * Math.pow(10, 8), false, 4)).toEqual(displayCrypto(10.1235));
-      expect(wrapper.vm.readableCrypto(10.123456789123456789 * Math.pow(10, 8), false, 10)).toEqual(
-        Number(10.123456789123456789).toLocaleString(undefined, { maximumFractionDigits: 8 }),
+      expect(wrapper.vm.readableCrypto(10 * Math.pow(10, 5), false)).toEqual(displayCrypto(10));
+      expect(wrapper.vm.readableCrypto(10.12345438912345 * Math.pow(10, 5), false)).toEqual(displayCrypto(10.12345));
+      expect(wrapper.vm.readableCrypto(10.1234 * Math.pow(10, 5), false)).toEqual(displayCrypto(10.1234));
+      expect(wrapper.vm.readableCrypto(10 * Math.pow(10, 5), false, 4)).toEqual(displayCrypto(10));
+      expect(wrapper.vm.readableCrypto(10.123456 * Math.pow(10, 5), false, 2)).toEqual(displayCrypto(10.123));
+      expect(wrapper.vm.readableCrypto(10.123456789123456789 * Math.pow(10, 5), false, 10)).toEqual(
+        Number(10.123456789123456789).toLocaleString(undefined, { maximumFractionDigits: 5 }),
       );
     });
 
