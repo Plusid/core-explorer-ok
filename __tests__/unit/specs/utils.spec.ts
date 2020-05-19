@@ -32,7 +32,7 @@ describe("Utils", () => {
 
     it("should convert the input to an arktoshi amount", async () => {
       const { value } = await inputProcessor("fee", "1");
-      expect(value).toBe(100000000);
+      expect(value).toBe(100000);
     });
 
     it("should return the public key of a username", async () => {
