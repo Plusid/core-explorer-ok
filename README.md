@@ -1,4 +1,4 @@
-# Ark Explorer 3.0
+# Infinity Explorer 1.0
 
 <p align="center">
     <img src="/InfinityExplorer.png" />
