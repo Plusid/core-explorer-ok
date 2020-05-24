@@ -5,11 +5,11 @@ const locale = store.getters["ui/locale"];
 
 export default {
   methods: {
-    // Note: due to BigNumber config the max decimals is 8
-    readableCrypto(value: string | undefined, appendCurrency = true, decimals = 8): string | void {
+    // Note: due to BigNumber config the max decimals is 5
+    readableCrypto(value: string | undefined, appendCurrency = true, decimals = 5): string | void {
       if (value) {
         const bigNumberValue = BigNumber.make(value);
-        const normalizedValue: string = Number(bigNumberValue.dividedBy(1e8)).toLocaleString(locale, {
+        const normalizedValue: string = Number(bigNumberValue.dividedBy(1e5)).toLocaleString(locale, {
           maximumFractionDigits: decimals,
         });
 
@@ -30,7 +30,7 @@ export default {
       let bigNumberValue = BigNumber.make(value);
 
       if (normalise) {
-        bigNumberValue = bigNumberValue.dividedBy(1e8);
+        bigNumberValue = bigNumberValue.dividedBy(1e5);
       }
 
       bigNumberValue = bigNumberValue.times(rate || BigNumber.make(store.getters["currency/rate"]));
