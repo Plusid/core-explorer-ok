@@ -10,9 +10,8 @@
 [![Codecov](https://badgen.now.sh/codecov/c/github/arkecosystem/explorer)](https://codecov.io/gh/arkecosystem/explorer)
 [![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
 
-> Lead Maintainer: [Michel Kraaijeveld](https://github.com/ItsANameToo)
 
-You can access it at [https://explorer.ark.io/](https://explorer.ark.io/).
+You can access it at [Infinity Software](https://infinitysoftware.io).
 
 ## Build Setup
 
@@ -129,4 +128,4 @@ This project exists thanks to all the people who [contribute](../../contributors
 
 ## License
 
-[MIT](LICENSE) © [Inifnity Software](https://infinitysoftware.io)
+[MIT](LICENSE) © [Infinity Software](https://infinitysoftware.io)
