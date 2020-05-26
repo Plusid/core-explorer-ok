@@ -5,8 +5,8 @@ export const I18N = {
 
 export const brand = {
   footer: {
-    url: "https://ark.io",
-    text: "ARK.io",
+    url: "https://www.infinitysoftware.io",
+    text: "infinity",
   },
 };
 
@@ -18,72 +18,72 @@ export const knownWalletsUrls = {
 export const socialMedia = [
   {
     name: "facebook",
-    url: "https://facebook.ark.io",
+    url: "https://www.infinitysoftware.io",
     viewBox: "0 0 10 16",
   },
   {
     name: "twitter",
-    url: "https://twitter.ark.io",
+    url: "https://www.infinitysoftware.io",
     viewBox: "0 0 16 16",
   },
   {
     name: "youtube",
-    url: "https://youtube.ark.io",
+    url: "https://www.infinitysoftware.io",
     viewBox: "0 0 18 16",
   },
   {
     name: "email",
-    url: "mailto:info@ark.io",
+    url: "mailto:info@infinitysoftware.io",
     viewBox: "0 0 16 16",
   },
   {
     name: "telegram",
-    url: "https://telegram.me/ArkEcosystem",
+    url: "https://www.infinitysoftware.io",
     viewBox: "0 0 14 16",
   },
   {
     name: "reddit",
-    url: "https://reddit.ark.io",
+    url: "https://www.infinitysoftware.io",
     viewBox: "0 0 16 16",
   },
   {
     name: "github",
-    url: "https://github.ark.io",
+    url: "https://www.infinitysoftware.io",
     viewBox: "0 0 16 16",
   },
   {
     name: "bitcointalk",
-    url: "https://bitcointalk.ark.io",
+    url: "https://www.infinitysoftware.io",
     viewBox: "0 0 16 16",
   },
   {
     name: "slack",
-    url: "https://slack.ark.io",
+    url: "https://www.infinitysoftware.io",
     viewBox: "0 0 14 16",
   },
   {
     name: "discord",
-    url: "https://discord.ark.io",
+    url: "https://www.infinitysoftware.io",
     viewBox: "0 0 14 16",
   },
   {
     name: "instagram",
-    url: "https://instagram.ark.io",
+    url: "https://www.infinitysoftware.io",
     viewBox: "0 0 14 16",
   },
   {
     name: "medium",
-    url: "https://blog.ark.io",
+    url: "https://www.infinitysoftware.io",
     viewBox: "0 0 16 16",
   },
   {
     name: "soundcloud",
-    url: "https://soundcloud.com/thearkcryptopodcast",
+    url: "https://www.infinitysoftware.io",
     viewBox: "0 0 20 16",
   },
   {
     name: "minds",
-    url: "https://www.minds.com/arkecosystem",
+    url: "https://www.infinitysoftware.io",
     viewBox: "0 0 14 16",
   },
 ];
