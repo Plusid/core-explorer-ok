@@ -1,7 +1,7 @@
 .theme-light {
   --color-theme-text-thead: #C5C7CB;
   --color-theme-table-row-sticky: #fff;
-  --color-theme-accents: #3f434d; 
+  --color-theme-accents: #20222e; 
   --color-theme-transaction-icon: #037cff;
 
   --color-theme-page-background-primary: #f5f6fa;
@@ -20,7 +20,7 @@
   --nav-background: #ffffff;
   --nav-border: #f1f3fc;
   --stat-background: #fafbfe;
-  --theme-text-tertiary: #838a9b;
+  --theme-text-tertiary: #a7a9af;
   --ark-meter: #e4ece9;
   --chart-active: #395174;
   --chart-inactive: #a0a6c8;
