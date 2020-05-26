@@ -26,6 +26,7 @@
   --chart-inactive: #a0a6c8;
   --theme-button: #e5f0f9;
   --theme-button-active: #fdbe4c;
+  --theme-button-active-down-page: #bee0fb;
   --theme-button-text: #037cff;
   --theme-button-close: #a0a6c8;
   --language-icon: #395174;
@@ -70,6 +71,7 @@
   --chart-inactive: #585a68;
   --theme-button: #2a2b31;
   --theme-button-active: #fdbe4c;
+  --theme-button-active-down-page: #bee0fb;
   --theme-button-text: #fff;
   --theme-button-close: #787a86;
   --language-icon: #a1a2a6;
