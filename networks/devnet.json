@@ -1,6 +1,6 @@
 {
   "title": "infinitytrust Devnet Explorer",
-  "server": "http://161.35.124.142:4003/api/v2",
+  "server": "http://104.248.8.11:4003/api/v2",
   "alias": "Development",
   "activeDelegates": "25",
   "rewardOffset": "1",
