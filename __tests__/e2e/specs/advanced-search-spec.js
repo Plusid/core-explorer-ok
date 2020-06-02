@@ -65,7 +65,7 @@ describe("Advanced Search", () => {
 
       cy.get("input[name=amount-from]").type("500");
       cy.get("input[name=amount-to]").type("500");
-      cy.get("input[name=fee-from]").type("1");
+      cy.get("input[name=fee-from]").type("0");
       cy.get("input[name=fee-to]")
         .type("1")
         .type("{enter}");
@@ -77,7 +77,7 @@ describe("Advanced Search", () => {
             .should("contain.text", "500");
 
           cy.get("td").eq(6)
-            .should("contain.text", "1");
+            .should("contain.text", "0");
         });
     });
 
