@@ -58,7 +58,7 @@ describe("Mixins > Misc", () => {
     it("should format to the specified decimals", () => {
       expect(wrapper.vm.readableNumber(1, 3)).toEqual("1.000");
       expect(wrapper.vm.readableNumber(1.23456, 3)).toEqual("1.235");
-      expect(wrapper.vm.readableNumber(100, 8)).toEqual("100.00000000");
+      expect(wrapper.vm.readableNumber(100, 5)).toEqual("100.00000");
     });
   });
 

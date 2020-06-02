@@ -179,7 +179,7 @@ describe("Services > Transaction", () => {
   });
 
   it("should return all transactions with a fee exceeding 25 ARK", async () => {
-    const minAmount = 25 * 1e8;
+    const minAmount = 25 * 1e5;
     jest.setTimeout(30000);
     const { data } = await TransactionService.search({
       fee: { from: minAmount },
@@ -193,8 +193,8 @@ describe("Services > Transaction", () => {
   });
 
   it("should return all transactions with an amount between 5000 and 6000 ARK", async () => {
-    const minAmount = 5000 * 1e8;
-    const maxAmount = 6000 * 1e8;
+    const minAmount = 5000 * 1e5;
+    const maxAmount = 6000 * 1e5;
     jest.setTimeout(30000);
     const { data } = await TransactionService.search({
       amount: { from: minAmount, to: maxAmount },
