@@ -67,7 +67,7 @@ describe("Advanced Search", () => {
       cy.get("input[name=amount-to]").type("500");
       cy.get("input[name=fee-from]").type("1");
       cy.get("input[name=fee-to]")
-        .type("0")
+        .type("1")
         .type("{enter}");
 
       cy.get("tbody tr")
