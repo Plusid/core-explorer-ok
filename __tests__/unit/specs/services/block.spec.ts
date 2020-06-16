@@ -118,7 +118,7 @@ describe("Services > Block", () => {
   });
 
   it("should return all blocks with a total fee exceeding 25 ARK ", async () => {
-    const minAmount = 25 * 1e8;
+    const minAmount = 25 * 1e5;
     jest.setTimeout(30000);
     const { data } = await BlockService.search({
       totalFee: { from: minAmount },
@@ -131,8 +131,8 @@ describe("Services > Block", () => {
   });
 
   it("should return all blocks with a total amount between 100 and 500 ARK", async () => {
-    const minAmount = 100 * 1e8;
-    const maxAmount = 500 * 1e8;
+    const minAmount = 100 * 1e5;
+    const maxAmount = 500 * 1e5;
     jest.setTimeout(30000);
     const { data } = await BlockService.search({
       totalAmount: { from: minAmount, to: maxAmount },

@@ -7,7 +7,7 @@ import Vuex from "vuex";
 import { BigNumber } from "@/utils";
 
 const getTotalForged = (supply, initialSupply) => {
-  return BigNumber.make(supply).minus(initialSupply).dividedBy(1e8).toString();
+  return BigNumber.make(supply).minus(initialSupply).dividedBy(1e5).toString();
 };
 
 describe("Components > Monitor > TotalForged", () => {
