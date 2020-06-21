@@ -10,15 +10,17 @@
 [![Codecov](https://badgen.now.sh/codecov/c/github/arkecosystem/explorer)](https://codecov.io/gh/arkecosystem/explorer)
 [![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
 
+> Lead Maintainer: [Michel Kraaijeveld](https://github.com/ItsANameToo)
 
-You can access it at [Infinity Software](https://infinitysoftware.io).
+You can access it at [http://68.183.102.212:4200/](http://68.183.102.212:4200/).
 
 ## Build Setup
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Plusid/explorer
+git clone https://github.com/Plusid/core-explorer
+cd core-explorer
 ```
 
 ### 2. Install Dependencies
@@ -55,7 +57,7 @@ If you are going to host your explorer instance on GitHub Pages you will need to
 yarn build --base https://username.github.io/repository/
 ```
 
-A running instance of the explorer on GitHub Pages can be found at https://arkecosystem.github.io/.
+A running instance of the explorer on GitHub Pages can be found at https://github.com/Plusid/core-explorer.
 
 > This step is not required if you are hosting the explorer on your "root" repository which is usually your username https://username.github.io/.
 
@@ -114,13 +116,13 @@ $ yarn test
 ## Contributing
 
 - If you find any bugs, submit an [issue](../../issues) or open a [pull-request](../../pulls), helping us catch and fix them.
-- Engage with other users and developers on the [ArkEcosystem Slack](https://ark.io/slack/).
-- Join our [gitter](https://gitter.im/ark-developers/Lobby).
-- [Contribute bounties](https://github.com/ArkEcosystem/bounty-program).
+- Engage with other users and developers on the [Infinitysoftware](https:).
+- Join our [gitter].
+- [Contribute bounties].
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to developers@infinitysoftware.io. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
